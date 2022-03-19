@@ -13,8 +13,14 @@ inputs:
   password:
     description: 'Your password'
     required: true
-  ocr_token:
-    description: 'Token of ocr web'
+  app_id:
+    description: 'Your baidu-ai AppID'
+    required: true
+  api_key:
+    description: 'Your baidu-ai API Key'
+    required: true
+  secret_key:
+    description: 'Your baidu-ai Secret Key'
     required: true
   tg_bot_token:
     description: 'Token of Telegram Bot'
@@ -32,7 +38,9 @@ runs:
       env:
         NETID: ${{ inputs.netid }}
         PASSWORD: ${{ inputs.password }}
-        OCR_TOKEN: ${{ inputs.ocr_token }}
+        APP_ID: ${{ inputs.app_id }}
+        API_KEY: ${{ inputs.api_key }}
+        SECRET_KEY: ${{ inputs.secret_key }}
         TG_BOT_TOKEN: ${{ inputs.tg_bot_token }}
         TG_CHATID: ${{ inputs.tg_chatid }}
         PYTHONIOENCODING: utf-8
