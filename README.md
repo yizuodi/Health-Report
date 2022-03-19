@@ -1,35 +1,14 @@
 # SYSU Health Report
 
-基于 [@tomatoF](https://github.com/tomatoF) 的 [jksb_sysu](https://github.com/tomatoF/jksb_sysu) 项目，发布到 GitHub Marketplace，方便调用。
-
-可以实现每天定时运行，并使用 Telegram Bot 发送运行结果。
+基于 [@Editst](https://github.com/Editst) 的 [jksb_sysu](https://github.com/Editst/SYSU-HealthReport) 项目。
+更改了验证码识别的方式，现在使用百度ai免费开放的文字识别应用。
 
 **已可以正常运行，仍存在较大不确定性，谨慎使用**
 
 # 使用
+本仓库为运行脚本，无需变动。
+前往 [SYSU-HealthReport-Template](https://github.com/Syderny/AutoHealthReport) 配置自己的健康申报。
 
-Star 后前往 [SYSU-HealthReport-Template](https://github.com/Editi0/SYSU-HealthReport-Template) 查看。
-
-# 配置
-
-```yaml
-jobs:
-  report:
-    runs-on: windows-latest
-    steps:
-    - name: Use SYSU Health Report
-      uses: Editst/SYSU-HealthReport@master
-      with:
-        netid: ${{secrets.NETID}}
-        password: ${{secrets.PASSWORD}}
-        ocr_token: ${{secrets.OCR_TOKEN}}
-        tg_bot_token: ${{secrets.TG_BOT_TOKEN}}
-        tg_chatid: ${{secrets.TG_CHATID}}
-```
-
-# TODO
-
-**欢迎提交 pull requests 来增加其他通知推送方式，不过要考虑好 Token 的传递问题。**
 
 # 免责声明
 
