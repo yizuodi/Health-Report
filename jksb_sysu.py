@@ -84,6 +84,9 @@ if __name__ == "__main__":
     elif bot_token.startswith('SCT'):
         from util import wx_send
         wx_send(bot_token, result)
+    elif chatid in ['False', '']:
+        from util import wx_send_with_pushplus
+        wx_send_with_pushplus(bot_token, result)
     else:
         from util import tgbot_send
         tgbot_send(bot_token, chatid, result)
