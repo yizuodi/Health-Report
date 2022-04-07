@@ -1,14 +1,11 @@
-# SYSU Health Report
+# Health Report
+基于 [@Syderny](https://github.com/Syderny) 的 [jksb_sysu](https://github.com/Editst/SYSU-HealthReport) 项目（使用百度ocr的API）
+和 [@Editst](https://github.com/Editst) 的 [jksb_sysu](https://github.com/Editst/SYSU-HealthReport) 项目（使用某第三方ocr平台API）。
 
-基于 [@Editst](https://github.com/Editst) 的 [jksb_sysu](https://github.com/Editst/SYSU-HealthReport) 项目。
-更改了验证码识别的方式，现在使用百度ai免费开放的文字识别应用。
-
-**已可以正常运行，仍存在较大不确定性，谨慎使用**
+**请谨慎使用**
 
 # 使用
-本仓库为运行脚本，无需变动。
-前往 [SYSU-HealthReport-Template](https://github.com/Syderny/AutoHealthReport) 配置自己的健康申报。
-
+请前往 [Health-Report-Template](https://github.com/yizuodi/Health-Report-Template) 配置自己的健康申报。
 
 # 免责声明
 
