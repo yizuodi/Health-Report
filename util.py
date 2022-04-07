@@ -43,3 +43,18 @@ def wx_send(wxsend_key, message):
             print('发送通知失败')
     except:
         print('发送通知失败')
+        
+def wx_send_with_pushplus(pushplus_token, message):
+    data = {
+        "token": f'{pushplus_token}',
+        "title": f'健康申报结果：{message}',
+        "content": "如遇身体不适、或居住地址发生变化，请及时更新健康申报信息。"
+    }
+    try:
+        r = requests.post(f'http://www.pushplus.plus/send', data = data)
+        if r.status_code == 200:
+            print('发送通知成功')
+        else:
+            print('发送通知失败')
+    except:
+        print('发送通知失败')
